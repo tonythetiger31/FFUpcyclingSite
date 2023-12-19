@@ -1,0 +1,19 @@
+.imgRow
+	display: flex
+	align-items: center
+
+.ImageWall
+	z-index: -1
+	display: block
+	top:1px
+	// animation: moveDown 2s linear infinite
+	animation-iteration-count: 1
+	transform: rotate(20deg)
+	
+@keyframes moveDown
+	0%
+		display: block
+		transform: rotate(20deg) translateY(0px)
+	100%
+		display: block
+		transform:  rotate(20deg) translateY(2900px)

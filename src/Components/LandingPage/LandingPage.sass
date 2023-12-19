@@ -1,0 +1,39 @@
+@import '../../_vars'
+
+.LandingPage
+	height: calc(100vh - $NAVBAR_HEIGHT*2)
+	display: flex
+	align-items: center 
+	justify-content: center
+.pageText
+	font-size: 3em
+	letter-spacing: 2.4px
+	max-width: 605px
+.pageSubText-1
+	font-weight: 700
+	background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%)
+	background-size: auto auto
+	background-clip: border-box
+	background-size: 200% auto
+	color: #fff
+	background-clip: text
+	text-fill-color: transparent
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	animation: textclip 2s linear infinite
+	display: inline-block
+
+@keyframes textclip
+	to
+		background-position: 200% center
+
+.pageSubText-2
+	text-decoration: underline
+	text-color: blue
+.pageSubText-3
+	color: #009185
+	font-weight: 700
+	text-decoration: underline
+.productSnippet
+	width: 30vw
+
