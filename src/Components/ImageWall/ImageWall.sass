@@ -1,19 +1,34 @@
 .imgRow
 	display: flex
 	align-items: center
+	justify-content: space-around
+	width:160px
+.clothingImage
+	// filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25))
+	
 
 .ImageWall
-	z-index: -1
+	margin: -1750px 0 0 425px 
 	display: block
-	top:1px
-	// animation: moveDown 2s linear infinite
-	animation-iteration-count: 1
-	transform: rotate(20deg)
-	
-@keyframes moveDown
+	animation: scrollDownAt20deg 60s linear infinite 
+
+
+@keyframes scrollDownAt0deg
 	0%
-		display: block
+		transform: rotate(0deg) translateY(0px)
+	100%
+		transform:  rotate(0deg) translateY(calc(6000px/2))
+
+@keyframes scrollDownAt-30deg
+	0%
+		transform: rotate(-30deg) translateY(0px)
+	100%
+		transform:  rotate(-30deg) translateY(calc(6000px/2))
+	
+@keyframes scrollDownAt20deg
+	0%
 		transform: rotate(20deg) translateY(0px)
 	100%
-		display: block
-		transform:  rotate(20deg) translateY(2900px)
+		transform:  rotate(20deg) translateY(calc(6000px/2))
+
+

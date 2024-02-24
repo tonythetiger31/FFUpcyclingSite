@@ -2,13 +2,17 @@
 
 .LandingPage
 	height: calc(100vh - $NAVBAR_HEIGHT*2)
+	width: 100vw
 	display: flex
 	align-items: center 
 	justify-content: center
+	position: relative
 .pageText
 	font-size: 3em
 	letter-spacing: 2.4px
 	max-width: 605px
+.cont
+	background-color: white
 .pageSubText-1
 	font-weight: 700
 	background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%)
@@ -22,7 +26,6 @@
 	-webkit-text-fill-color: transparent
 	animation: textclip 2s linear infinite
 	display: inline-block
-
 @keyframes textclip
 	to
 		background-position: 200% center
@@ -34,6 +37,13 @@
 	color: #009185
 	font-weight: 700
 	text-decoration: underline
-.productSnippet
+.productSnippet2
 	width: 30vw
+	
+.productSnippet1
+	z-index: -1
+	left: -1000px
+	bottom: -1100px
+	position: absolute
+
 
