@@ -1,8 +1,70 @@
-@import '../../colors'	
+@import '../../colors'
 
 .Footer
+	position: relative
 	display: flex
+	justify-content: space-between
+	flex-direction: row
 	background-color: $PRIMARY_COLOR
 	width: 100vw
 	z-index: 1
 	color: white
+	padding-top: 1em
+	padding-bottom: 1em
+	overflow: hidden
+
+.leftFooter
+	width: 50vw
+	display: flex
+	justify-content: center
+	flex-direction: column
+	padding-left: 1em
+
+.fTitle
+	display: flex
+	align-items: center
+
+.infoText
+	margin-left: 1em
+	margin-bottom: 1em
+	line-height: 1.4em
+	font-weight: 800
+	a
+		color: white
+
+.rightFooter
+	width: 50vw
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+.insideRightFooter
+	display: flex
+	flex-direction: column
+	div
+		font-size: 1.4em
+		margin-bottom: .2em
+	input, button
+		padding: .5em
+		border-radius: 8px
+		border: none
+		margin-bottom: .2em
+		background-color: white
+	button
+		width: 10em
+		font-weight: 800
+		color: $PRIMARY_COLOR
+		border: solid 1px white
+	button:hover
+		background-color: $PRIMARY_COLOR
+		color: white
+		cursor: pointer
+
+.fTitle
+	color: white
+	letter-spacing: 0.3em
+	margin-bottom: 10px
+	margin-top: 10px
+	font-size: 2em
+	font-family: "Josefin Sans", sans-serif

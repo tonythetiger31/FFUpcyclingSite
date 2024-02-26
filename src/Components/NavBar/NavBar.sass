@@ -1,17 +1,41 @@
 @import '../../colors'
 .NavBar
 	display: flex
-	justify-content: flex-start
-	align-items: center
+	justify-content: space-between
+	align-items: start
 	margin: none
 
 .logo
 	font-weight: 800
 	background-color: $PRIMARY_COLOR
 	color: white
-	padding: 12px
+	padding: 5px
 	margin: 0px
 	border-radius: 0 0 8px 0
+
+.title
+	color: $PRIMARY_COLOR
+	letter-spacing: 0.3em
+	margin-bottom: 10px
+	margin-top: 10px
+	font-size: 2em
+	font-family: "Josefin Sans", sans-serif
+	display: flex
+	align-items: center
+
+.navAndTitleParent
+	width: calc( 100vw - 60px)
+	display: flex
+	align-items: center
+	flex-direction: column
+	margin: none
+
+.navParent
+	display: flex
+	align-items: center
+	margin: none
+	font-size: 1.2em
+
 .button
 	transition-duration: .8s
 	cursor: pointer
@@ -21,3 +45,5 @@
 	font-size: auto + 3px
 	color: $PRIMARY_COLOR
 
+.mission
+	margin-left: -50px

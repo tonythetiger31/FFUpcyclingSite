@@ -10,7 +10,7 @@ export default function SecondPage() {
 			<div className="secondPageTextLeft">
 				{SECOND_PAGE_TEXT_1}	
 			</div>
-			<ThreadLine angle="70" left="-10" />
+			<ThreadLine angle="70" left="-10" color="white" />
 			<div className="secondPageTextRight">
 				{SECOND_PAGE_TEXT_2}
 			</div>

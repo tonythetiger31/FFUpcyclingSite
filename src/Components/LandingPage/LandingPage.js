@@ -6,10 +6,10 @@ import ThreadLine from '../ThreadLine/ThreadLine';
 export default function LandingPage() {
 	return (
 		<div className="LandingPage">
-			<ThreadLine angle="54" left={30} />
-			<ThreadLine angle="104" left={-40} />
+			<ThreadLine angle="54" left={30} color="#009185" zIndex="-2" />
+			<ThreadLine angle="104" left={-40} color="#009185" zIndex="-2" />
 			<div className="productSnippet1">
-				<ImageWall angle="-30deg"/>
+				<ImageWall angle="-30deg" />
 			</div>
 			<div className="pageText">
 				<span className="cont">
@@ -20,7 +20,7 @@ export default function LandingPage() {
 				<span className="pageSubText-3">sustainable</span> approach
 			</div>
 			<div className="productSnippet2">
-				<ImageWall angle="20deg" margin="-1750px 0 0 425px"/>
+				<ImageWall angle="20deg" margin="-1750px 0 0 425px" />
 			</div>
 		</div>
 	);
