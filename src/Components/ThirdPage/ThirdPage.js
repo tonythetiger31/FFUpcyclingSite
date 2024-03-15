@@ -11,7 +11,7 @@ function ImgLink(props) {
 	const { img, link, alt, size } = props;
 	return (
 		<a href={link}>
-			<img width={size} length={size} alt={alt} src={img} />
+			<img className='ImgLink' length={size} alt={alt} src={img} />
 		</a>
 	);
 }
@@ -28,25 +28,19 @@ export default function ThirdPage() {
 					next
 				</div>
 			</div>
-			<div className="centeringContainer">
-				<div
-					className="thirdPageText thirdText"
-					style={{ 'text-decoration': 'underline' }}
-				></div>
-			</div>
 			<div className="centeringContainer" style={{ 'margin-top': '80px' }}>
-				<ImgLink size="160" alt="Depop logo" img={depopIcon} link={DEPOP_LINK} />
-				<ImgLink size="160" alt="Mercari Logo" img={mercariIcon} link={MERCARI_LINK} />
-				<ImgLink size="160" alt="Ebay logo" img={ebayIcon} link={EBAY_LINK} />
+				<ImgLink alt="Depop logo" img={depopIcon} link={DEPOP_LINK} />
+				<ImgLink alt="Mercari Logo" img={mercariIcon} link={MERCARI_LINK} />
+				<ImgLink alt="Ebay logo" img={ebayIcon} link={EBAY_LINK} />
 				<ImgLink
 					size="160" alt="Poshmark logo"
 					img={poshmarkIcon}
 					link={POSHMARK_LINK}
 				/>
 			</div>
-			<div className="globe">
-				<img alt={'earth'} src={earthImg} />
-			</div>
+				<div className="globe">
+					<img alt={'earth'} src={earthImg} />
+				</div>
 		</div>
 	);
 }

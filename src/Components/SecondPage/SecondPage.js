@@ -7,13 +7,9 @@ import ThreadLine from '../ThreadLine/ThreadLine';
 export default function SecondPage() {
 	return (
 		<div className="SecondPage">
-			<div className="secondPageTextLeft">
-				{SECOND_PAGE_TEXT_1}	
-			</div>
-			<ThreadLine angle="70" left="-10" color="white" />
-			<div className="secondPageTextRight">
-				{SECOND_PAGE_TEXT_2}
-			</div>
+			<div className="secondPageTextLeft">{SECOND_PAGE_TEXT_1}</div>
+			<ThreadLine angle="80" left="-0" color="#ffffff57" />
+			<div className="secondPageTextRight">{SECOND_PAGE_TEXT_2}</div>
 		</div>
 	);
 }

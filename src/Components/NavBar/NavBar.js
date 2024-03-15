@@ -6,18 +6,29 @@ import whiteTransparentLogo from '../../assets/logos/whiteTransparentLogo.webp';
 export default function NavBar() {
 	return (
 		<div className="NavBar">
-			<h3 className="logo">
-				<img width="70px" src={whiteTransparentLogo}></img>
-			</h3>
+			<input type="checkbox" id="menyAvPaa" className="menyAvPaa"></input>
+			<label className="burger" htmlFor="menyAvPaa">
+				<div></div>
+				<div></div>
+				<div></div>
+			</label>
+			<nav>
+				<div className="button button-m mission">Mission</div>
+				<div className="button button-m platforms">Platforms</div>
+				<div className="button button-m contact">Contact</div>
+				<div className="button button-m contact">About us</div>
+			</nav>
+
 			<div className="navAndTitleParent">
 				<div className="title">
-					<img width="70px" src={colorTransparentLogo} />UPCYCLING
+					<img className="titleLogo" src={colorTransparentLogo} />
+					UPCYCLING
 				</div>
 				<div className="navParent">
-					<div className="button mission">Mission</div>
-					<div className="button platforms">Platforms</div>
-					<div className="button contact">Contact</div>
-					<div className="button contact">About us</div>
+					<div className="button-d button mission">Mission</div>
+					<div className="button-d button platforms">Platforms</div>
+					<div className="button-d button contact">Contact</div>
+					<div className="button-d button contact">About us</div>
 					<div className="gostElement"></div>
 				</div>
 			</div>

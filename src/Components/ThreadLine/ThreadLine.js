@@ -9,7 +9,7 @@ export default function ThreadLine(props) {
 	}
 	return (
 		<div
-			style={{ transform: 'rotate(' + angle + 'deg)', left: left + 'vw', color: color, "z-index": zIndex}}
+			style={{ transform: 'rotate(' + angle + 'deg)', 'margin-left': left + 'px', color: color, "z-index": zIndex}}
 			className="ThreadLine"
 		>
 			{hyphenString}

@@ -1,4 +1,6 @@
 @import '../../colors'
+@import '../../_vars'
+
 .ThirdPage
 	height: 100vh
 	width: 100vw
@@ -24,6 +26,8 @@
 	display: flex
 	justify-content: center
 	align-items: center
+.ImgLink
+	width: 160px
 
 .globe
 	z-index: -1
@@ -46,3 +50,21 @@
 				transform: translateX(0)
 			from
 				transform: translateX(-50%)
+
+@media screen and (max-width: $mobile-width)
+	.ImgLink
+		width: 100px
+	.thirdPageText
+		font-size: 1.4em
+		margin: .3em 0px
+	.textWrapper
+		flex-direction: column
+		margin-top: 5vh
+	.globe
+		height: 600px
+	.ThirdPage
+		height: 80vh
+	.firstText
+		width: 80vw
+	.secondText
+		width: 80vw

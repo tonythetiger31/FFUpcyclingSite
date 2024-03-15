@@ -9,7 +9,7 @@ function Footer() {
 		<div className="Footer">
 			<div className="leftFooter">
 				<div className="fTitle">
-					<img width="70px" src={whiteTransparentLogo}></img> UPCYCLING
+					<img className='titleLogo' src={whiteTransparentLogo}></img> UPCYCLING
 				</div>
 				<div className="infoText">
 					Contact us: exampleemail@gmail.com
@@ -20,7 +20,7 @@ function Footer() {
 					<br />
 					<a href={POSHMARK_LINK}>About us</a>
 				</div>
-				<div className="copyrightTag">© FFUpcycling 2024</div>
+				<div className="copyrightTag-d">© FFUpcycling 2024</div>
 			</div>
 
 			<ThreadLine angle="286.06" color="white" zIndex="-2" left="-10" />
@@ -31,6 +31,7 @@ function Footer() {
 					<button>Subscribe</button>
 				</div>
 			</div>
+			<div className="copyrightTag-m">© FFUpcycling 2024</div>
 		</div>
 	);
 }

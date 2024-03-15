@@ -1,20 +1,19 @@
 @import '../../colors'
+@import '../../_vars'
 
 .Footer
 	position: relative
 	display: flex
-	justify-content: space-between
+	justify-content: space-around
 	flex-direction: row
 	background-color: $PRIMARY_COLOR
 	width: 100vw
 	z-index: 1
 	color: white
-	padding-top: 1em
-	padding-bottom: 1em
+	padding: 1em
 	overflow: hidden
 
 .leftFooter
-	width: 50vw
 	display: flex
 	justify-content: center
 	flex-direction: column
@@ -25,6 +24,7 @@
 	align-items: center
 
 .infoText
+	margin-top: 1em
 	margin-left: 1em
 	margin-bottom: 1em
 	line-height: 1.4em
@@ -33,11 +33,16 @@
 		color: white
 
 .rightFooter
-	width: 50vw
 	display: flex
 	justify-content: center
-	align-items: center
+	align-items: start
 	flex-direction: column
+	padding: 2em
+	padding-top: 1em
+	padding-left: 0em
+
+.copyrightTag-m
+	display: none
 
 .insideRightFooter
 	display: flex
@@ -68,3 +73,16 @@
 	margin-top: 10px
 	font-size: 2em
 	font-family: "Josefin Sans", sans-serif
+
+@media screen and (max-width: $mobile-width)
+	.fTitle
+		font-size: 1.5em
+		margin-left: -1em
+	.rightFooter
+		padding: 1em
+	.Footer
+		flex-direction: column
+	.copyrightTag-d
+		display: none
+	.copyrightTag-m
+		display: block

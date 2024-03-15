@@ -1,17 +1,15 @@
 @import '../../colors'
+@import '../../_vars'
+
 .NavBar
 	display: flex
 	justify-content: space-between
 	align-items: start
 	margin: none
+	height: $NAVBAR_HEIGHT
 
-.logo
-	font-weight: 800
-	background-color: $PRIMARY_COLOR
-	color: white
-	padding: 5px
-	margin: 0px
-	border-radius: 0 0 8px 0
+.titleLogo
+	width: 70px
 
 .title
 	color: $PRIMARY_COLOR
@@ -24,7 +22,7 @@
 	align-items: center
 
 .navAndTitleParent
-	width: calc( 100vw - 60px)
+	width: 100vw
 	display: flex
 	align-items: center
 	flex-direction: column
@@ -40,10 +38,92 @@
 	transition-duration: .8s
 	cursor: pointer
 	margin-left: 50px
-	background-color: white
+
 .button:hover
 	font-size: auto + 3px
 	color: $PRIMARY_COLOR
 
+.button-d
+	display: block
+	background-color: white
+.button-m
+	display: none
+	background-color: none
+	color: white
+	font-size: 3.2em
+	transform: rotate(-2deg)
+
 .mission
-	margin-left: -50px
+	margin-left: 0px
+
+.burger-wrapper
+	cursor: pointer
+
+nav
+	background-image: linear-gradient(to bottom right, $PRIMARY_COLOR, $ACCENT_COLOR)
+	backdrop-filter: blur(5px)
+	width: 100vw
+	height: 100vh
+	position: fixed
+	left: 0
+	transition-timing-function: cubic-bezier(10, 2, 3, 1)
+	transform: translateX(-100vw)
+	top: 0
+	z-index: 3
+	transition: 0.5s
+	overflow: hidden
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+.menyAvPaa
+	display: none
+
+	&:checked ~ nav
+		transform: translateX(0vw)
+
+.burger
+	position: absolute
+	cursor: pointer
+	width: 2rem
+	height: 2rem
+	left: 1rem
+	top: 1rem
+	display: none
+	justify-content: space-between
+	flex-direction: column
+
+	> div
+		height: 2px
+		background-color: #000
+		transition: 0.5s
+		z-index: 999
+
+.menyAvPaa:checked ~ .burger > div
+	background-color: #fff
+
+	&:nth-child(1)
+		transform: translateY(15px) rotate(45deg)
+
+	&:nth-child(2)
+		opacity: 0
+
+	&:nth-child(3)
+		transform: translateY(-15px) rotate(-45deg)
+
+@media screen and (max-width: $mobile-width)
+	.title
+		font-size: 1.5em
+	.titleLogo
+		width: 55px
+	.button
+		margin-left: 0px
+	.button-d
+		display: none
+	.button-m
+		display: block
+	.leftBox
+		display: block
+	.burger
+		display: flex

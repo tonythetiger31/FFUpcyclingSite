@@ -4,15 +4,20 @@
 	height: calc(100vh - $NAVBAR_HEIGHT*2)
 	width: 100vw
 	display: flex
-	align-items: center 
+	align-items: center
 	justify-content: center
 	position: relative
+
 .pageText
 	font-size: 3em
 	letter-spacing: 2.4px
 	max-width: 605px
+	background-color: #ffffff
+	margin-left: 3vw
+
 .cont
 	background-color: white
+	
 .pageSubText-1
 	font-weight: 700
 	background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%)
@@ -39,11 +44,21 @@
 	text-decoration: underline
 .productSnippet2
 	width: 30vw
-	
+
 .productSnippet1
 	z-index: -1
-	left: -1000px
-	bottom: -1100px
-	position: absolute
+	position: relative
 
-
+@media screen and (max-width: $mobile-width)
+	.pageText
+		font-size: 2.5em
+		margin-left: 2em
+	.LandingPage .ThreadLine
+		margin-left: 0px !important
+	.LandingPage .ThreadLine:first-child
+		margin-left: 100px !important
+		display: none
+	.productSnippet2 .ImageWall
+		margin-top: -1950px !important
+	.productSnippet1 .ImageWall:first-child
+		display: none
