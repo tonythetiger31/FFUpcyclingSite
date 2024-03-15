@@ -9,7 +9,8 @@ function Footer() {
 		<div className="Footer">
 			<div className="leftFooter">
 				<div className="fTitle">
-					<img className='titleLogo' src={whiteTransparentLogo}></img> UPCYCLING
+					<img className="titleLogo" src={whiteTransparentLogo}></img>{' '}
+					UPCYCLING
 				</div>
 				<div className="infoText">
 					Contact us: exampleemail@gmail.com
@@ -26,9 +27,17 @@ function Footer() {
 			<ThreadLine angle="286.06" color="white" zIndex="-2" left="-10" />
 			<div className="rightFooter">
 				<div className="insideRightFooter">
-					<div>Sign up for our newsletter</div>
-					<input placeholder="Your Email Here"></input>
-					<button>Subscribe</button>
+					<form name="contact" method="POST" data-netlify="true">
+						<label>
+							Sign up for our newsletter
+							<input
+								type="text"
+								name="email"
+								placeholder="Your Email Here"
+							></input>
+						</label>
+						<button type="submit">Subscribe</button>
+					</form>
 				</div>
 			</div>
 			<div className="copyrightTag-m">© FFUpcycling 2024</div>
