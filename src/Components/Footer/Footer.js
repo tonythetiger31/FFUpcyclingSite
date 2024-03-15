@@ -27,7 +27,7 @@ function Footer() {
 			<ThreadLine angle="286.06" color="white" zIndex="-2" left="-10" />
 			<div className="rightFooter">
 				<div className="insideRightFooter">
-					<form name="contact" method="POST" data-netlify="true">
+					<form name="contact" netlify>
 						<label>
 							Sign up for our newsletter
 							<input
