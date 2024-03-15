@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { props } from 'react';
 import sass from './ThirdPage.sass';
 import depopIcon from '../../assets/icons/depopIcon.webp';
 import ebayIcon from '../../assets/icons/ebayIcon.webp';
@@ -11,14 +11,15 @@ function ImgLink(props) {
 	const { img, link, alt, size } = props;
 	return (
 		<a href={link}>
-			<img className='ImgLink' length={size} alt={alt} src={img} />
+			<img className="ImgLink" length={size} alt={alt} src={img} />
 		</a>
 	);
 }
 
-export default function ThirdPage() {
+export default function ThirdPage(props) {
+	const { elementRef } = props;
 	return (
-		<div className="ThirdPage">
+		<div className="ThirdPage" ref={elementRef}>
 			<div className="textWrapper">
 				<div className="thirdPageText firstText">
 					Since 2020 we’ve saved 3000lb of clothes from the trash
@@ -33,14 +34,15 @@ export default function ThirdPage() {
 				<ImgLink alt="Mercari Logo" img={mercariIcon} link={MERCARI_LINK} />
 				<ImgLink alt="Ebay logo" img={ebayIcon} link={EBAY_LINK} />
 				<ImgLink
-					size="160" alt="Poshmark logo"
+					size="160"
+					alt="Poshmark logo"
 					img={poshmarkIcon}
 					link={POSHMARK_LINK}
 				/>
 			</div>
-				<div className="globe">
-					<img alt={'earth'} src={earthImg} />
-				</div>
+			<div className="globe">
+				<img alt={'earth'} src={earthImg} />
+			</div>
 		</div>
 	);
 }

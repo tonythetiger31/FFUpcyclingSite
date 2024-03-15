@@ -1,19 +1,24 @@
 @import "./_vars"
 .App
-	overflow: hidden
+	overflow: clip
 	font-family: 'DM Sans', sans-serif
 	width: 100vw
 	margin: 0px
 	display: flex
 	flex-direction: column
 .arrowButtonContainer
-	height: $NAVBAR_HEIGHT 
+	height: $NAVBAR_HEIGHT
 	display: flex
 	justify-content: center
+	z-index: 1
+
 .arrowButton
 	font-size: 41px
 	display: block
 	margin-top: -15px
 	cursor: pointer
+
 .material-symbols-outlined
 	font-size: 41px
+	box-shadow: inset 0px 0 20px 20px white
+	border-radius: 20px
