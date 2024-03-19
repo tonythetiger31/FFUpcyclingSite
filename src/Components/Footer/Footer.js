@@ -13,7 +13,7 @@ function Footer() {
 					UPCYCLING
 				</div>
 				<div className="infoText">
-					Contact us: exampleemail@gmail.com
+					Contact us: josefinafuentes@ffupcycling.com
 					<br />
 					<a href={DEPOP_LINK}>depop</a> <a href={MERCARI_LINK}>mercari</a>
 					{''} <a href={EBAY_LINK}>ebay</a>{' '}
