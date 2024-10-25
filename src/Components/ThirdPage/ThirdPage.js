@@ -22,14 +22,17 @@ export default function ThirdPage(props) {
 		<div className="ThirdPage" ref={elementRef}>
 			<div className="textWrapper">
 				<div className="thirdPageText firstText">
-					Since 2020 we’ve saved 3000lb of clothes from the trash
+					Since 2020 we've saved thousands of clothes from the trash
 				</div>
 				<div className="thirdPageText secondText">
-					over 2,000 happy customers, and we’d be honored if you where our
-					next
+					With thousands of happy customers, we’d be honored if you where
+					our next
 				</div>
 			</div>
-			<div className="centeringContainer" style={{ 'margin-top': '80px' }}>
+			<div
+				className="centeringContainer"
+				style={{ 'margin-top': '80px', 'margin-bottom': '80px' }}
+			>
 				<ImgLink alt="Depop logo" img={depopIcon} link={DEPOP_LINK} />
 				<ImgLink alt="Mercari Logo" img={mercariIcon} link={MERCARI_LINK} />
 				<ImgLink alt="Ebay logo" img={ebayIcon} link={EBAY_LINK} />
@@ -40,9 +43,9 @@ export default function ThirdPage(props) {
 					link={POSHMARK_LINK}
 				/>
 			</div>
-			<div className="globe">
+			{/* <div className="globe">
 				<img alt={'earth'} src={earthImg} />
-			</div>
+			</div> */}
 		</div>
 	);
 }
